@@ -19,6 +19,8 @@
 		D81F7574273CF20200285782 /* CurrentLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7573273CF20200285782 /* CurrentLocationRepository.swift */; };
 		D81F7576273CF21500285782 /* CurrentLocationRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7575273CF21500285782 /* CurrentLocationRepositoryInterface.swift */; };
 		D81F7578273CF25E00285782 /* CurrentLocationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */; };
+		D81F757A273CFD0D00285782 /* LocationStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7579273CFD0D00285782 /* LocationStatusType.swift */; };
+		D81F757D273D15DD00285782 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81F757C273D15DD00285782 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D81F7573273CF20200285782 /* CurrentLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationRepository.swift; sourceTree = "<group>"; };
 		D81F7575273CF21500285782 /* CurrentLocationRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationRepositoryInterface.swift; sourceTree = "<group>"; };
 		D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationDataStore.swift; sourceTree = "<group>"; };
+		D81F7579273CFD0D00285782 /* LocationStatusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatusType.swift; sourceTree = "<group>"; };
+		D81F757C273D15DD00285782 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81F757D273D15DD00285782 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,7 @@
 				D81F7554273CE8DF00285782 /* LocationManagerInDataStoreTests */,
 				D81F755E273CE8DF00285782 /* LocationManagerInDataStoreUITests */,
 				D81F753C273CE8DD00285782 /* Products */,
+				D81F757B273D15DC00285782 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +143,7 @@
 		D81F756E273CF0EE00285782 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D81F7579273CFD0D00285782 /* LocationStatusType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +181,14 @@
 				D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */,
 			);
 			path = DataStore;
+			sourceTree = "<group>";
+		};
+		D81F757B273D15DC00285782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D81F757C273D15DD00285782 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +327,7 @@
 				D81F7578273CF25E00285782 /* CurrentLocationDataStore.swift in Sources */,
 				D81F753F273CE8DD00285782 /* AppDelegate.swift in Sources */,
 				D81F7574273CF20200285782 /* CurrentLocationRepository.swift in Sources */,
+				D81F757A273CFD0D00285782 /* LocationStatusType.swift in Sources */,
 				D81F7541273CE8DD00285782 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
