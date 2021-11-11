@@ -16,6 +16,9 @@
 		D81F7556273CE8DF00285782 /* LocationManagerInDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7555273CE8DF00285782 /* LocationManagerInDataStoreTests.swift */; };
 		D81F7560273CE8DF00285782 /* LocationManagerInDataStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F755F273CE8DF00285782 /* LocationManagerInDataStoreUITests.swift */; };
 		D81F7562273CE8DF00285782 /* LocationManagerInDataStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7561273CE8DF00285782 /* LocationManagerInDataStoreUITestsLaunchTests.swift */; };
+		D81F7574273CF20200285782 /* CurrentLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7573273CF20200285782 /* CurrentLocationRepository.swift */; };
+		D81F7576273CF21500285782 /* CurrentLocationRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7575273CF21500285782 /* CurrentLocationRepositoryInterface.swift */; };
+		D81F7578273CF25E00285782 /* CurrentLocationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		D81F755B273CE8DF00285782 /* LocationManagerInDataStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerInDataStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81F755F273CE8DF00285782 /* LocationManagerInDataStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerInDataStoreUITests.swift; sourceTree = "<group>"; };
 		D81F7561273CE8DF00285782 /* LocationManagerInDataStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerInDataStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D81F7573273CF20200285782 /* CurrentLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationRepository.swift; sourceTree = "<group>"; };
+		D81F7575273CF21500285782 /* CurrentLocationRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationRepositoryInterface.swift; sourceTree = "<group>"; };
+		D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,12 @@
 			children = (
 				D81F753E273CE8DD00285782 /* AppDelegate.swift */,
 				D81F7540273CE8DD00285782 /* SceneDelegate.swift */,
-				D81F7542273CE8DD00285782 /* ViewController.swift */,
-				D81F7544273CE8DD00285782 /* Main.storyboard */,
-				D81F7547273CE8DF00285782 /* Assets.xcassets */,
-				D81F7549273CE8DF00285782 /* LaunchScreen.storyboard */,
 				D81F754C273CE8DF00285782 /* Info.plist */,
+				D81F756E273CF0EE00285782 /* Model */,
+				D81F756F273CF10300285782 /* Views */,
+				D81F7570273CF11500285782 /* Controller */,
+				D81F7571273CF17700285782 /* Repository */,
+				D81F7572273CF18200285782 /* DataStore */,
 			);
 			path = LocationManagerInDataStore;
 			sourceTree = "<group>";
@@ -125,6 +132,48 @@
 				D81F7561273CE8DF00285782 /* LocationManagerInDataStoreUITestsLaunchTests.swift */,
 			);
 			path = LocationManagerInDataStoreUITests;
+			sourceTree = "<group>";
+		};
+		D81F756E273CF0EE00285782 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D81F756F273CF10300285782 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D81F7544273CE8DD00285782 /* Main.storyboard */,
+				D81F7549273CE8DF00285782 /* LaunchScreen.storyboard */,
+				D81F7547273CE8DF00285782 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D81F7570273CF11500285782 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D81F7542273CE8DD00285782 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D81F7571273CF17700285782 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D81F7573273CF20200285782 /* CurrentLocationRepository.swift */,
+				D81F7575273CF21500285782 /* CurrentLocationRepositoryInterface.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D81F7572273CF18200285782 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				D81F7577273CF25E00285782 /* CurrentLocationDataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81F7576273CF21500285782 /* CurrentLocationRepositoryInterface.swift in Sources */,
 				D81F7543273CE8DD00285782 /* ViewController.swift in Sources */,
+				D81F7578273CF25E00285782 /* CurrentLocationDataStore.swift in Sources */,
 				D81F753F273CE8DD00285782 /* AppDelegate.swift in Sources */,
+				D81F7574273CF20200285782 /* CurrentLocationRepository.swift in Sources */,
 				D81F7541273CE8DD00285782 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
