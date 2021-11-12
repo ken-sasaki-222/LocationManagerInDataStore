@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        self.currentLocationRepository = RepositoryLocator.getCurrentLocationrepository()
+        self.currentLocationRepository = RepositoryLocator.getCurrentLocationRepository()
         super.init(coder: coder)
     }
     
