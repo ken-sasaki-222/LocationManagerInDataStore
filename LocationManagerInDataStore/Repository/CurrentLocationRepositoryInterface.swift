@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol CurrentLocationRepositoryInterface {
+    func getStatus() -> LocationStatusType
+    func callRequestWhenInUse(complication: @escaping(LocationStatusType) -> Void)
+    func callStartUpdateLocation()
+    var delegate: CurrentLocationRepositoryDelegate? { get set }
+}
