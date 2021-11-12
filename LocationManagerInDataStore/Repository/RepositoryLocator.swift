@@ -9,7 +9,7 @@ import Foundation
 
 class RepositoryLocator {
     
-    static func getCurrentLocationrepository() -> CurrentLocationRepositoryInterface {
+    static func getCurrentLocationRepository() -> CurrentLocationRepositoryInterface {
         return CurrentLocationRepository()
     }
 }
